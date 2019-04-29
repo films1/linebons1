@@ -35,9 +35,9 @@ if (!is_null($events['events'])) //check ค่าในตัวแปร $even
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
             if($txtin == ('โหลๆ')
             {
-                $txback = '5 โหล';
+                $txtback = '5 โหล';
             }
-            reply_msg($txback,$replyToken);      
+            reply_msg($txtback,$replyToken);      
         }
     }
 }

@@ -36,7 +36,7 @@ if (!is_null($events['events'])) //check ค่าในตัวแปร $even
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
             $sql_text = "SELECT * FROM films1 WHERE kerword LIKE '%$txtin%'";
             $query = mysqli_query($conn,$sql_text);
-            while($obj = mysqli_fetch_assoc($qoery))
+            while($obj = mysqli_fetch_assoc($query))
             {
                $textback = $txtback."\n".$obj["answer"];
             }
